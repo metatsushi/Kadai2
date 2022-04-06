@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+</head>
+   
+<body>
+        <div id="header">
+            <h1 class="title text-center">じゃんけんゲーム</h1>
+            <button class="btn start text-center">スタート</button>
+        </div>
+    
+        <div id="choices">
+            <p class="direction text-center">あなたの手を選んでください</p>
+            <div class="hands">
+                <div class="hand" id="stone"></div>
+                <div class="hand" id="scissors"></div>
+                <div class="hand" id="paper"></div>
+            </div>
+        </div>
+        <div id="confirm">
+            <div class="confirmation">
+                <p class="yes_or_no">確定しますか？</p>    
+                <button class="btn yes">確定する</button>
+                <button class="btn no">選び直す</button>
+            </div>
+            <div class="yourselect" ></div>
+        </div>
+        <div id="battle">
+            <div class="make_a">じゃんけん</div>
+            <div class="toss">ぽん！</div>
+            <div class="computerside">            
+                <div class="computerhand"></div>
+                <p class="text-center">コンピューター</p>
+            </div>
+            <div class="yourside">
+                <div class="yourhand"></div>
+                <p class="text-center">あなた</p>
+            </div>
+            <div class="result win"></div>
+            <div class="result lose"></div>
+            <div class="result draw"></div>
+        </div>
+      
+
+    <!-- JQueryを読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 自作JSの読み込み -->
+    <script src="js/script.js"></script>
+   
+</body>
+</html>
